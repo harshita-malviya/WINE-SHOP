@@ -1,0 +1,695 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* general css */
+
+.fix {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1170px;
+}
+@media only screen and (max-width : 787px) {
+    .container {
+        width: 450px;
+    }
+    .items .img1{
+        margin-left: -15px !important;
+    }
+    .prices{
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center;text-align: center;
+    }
+    .flavore{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+    }
+    .first-bottle{
+        width: 20% !important;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .customer-para{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .blog1{
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* width: 20%; */
+    }
+    .blog-one{
+        width: 33% !important;
+    }
+    .about{
+        display: flex;
+        float: right;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-right: 25%;
+
+    }
+    .about-section p{
+        width: 137% !important;
+    }
+    .about-section .btn{
+        width: 45% !important;
+    }
+    .row{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width : 768px){
+    .customer-para{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog1{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .blog-one{
+        width: 70% !important;
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap !important;
+        flex-direction:column !important;
+    }
+    .footer-block{
+        width: 163% !important;
+    }
+}
+@media only screen and (max-width : 689px) {
+    .carousel-caption{
+        display: none;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        border-radius: 26% !important;
+    }
+}
+@media only screen and (max-width : 1099px) {
+  .navbar-nav{
+    font-size: 12px;
+  } 
+}
+
+@media only screen and (max-width : 992px){
+    .carousel-item .carousel-caption h3{
+        font-size: 30px;
+    }
+    .carousel-item .carousel-caption h1{
+        font-size: 30px;
+    }
+    .nam{
+        font-size: 15px !important;
+    }
+    .rs{
+        font-size: 19px;
+    }
+    .blog-one img{
+        width: 101% !important;
+    }
+    .subscribe{
+        width: 90%;
+        padding: 10px;
+    }
+    .flavore{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+    .first-bottle{
+        width: 20% !important;
+    }
+    .first-bottle h3{
+        width: 40%;
+    }
+    .prices{
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center;text-align: center;
+        padding: 40px;
+        /* width: 40%; */
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width : 1056px){
+    .flavore{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+        align-items: center;
+        text-align: center;
+        /* flex-wrap: wrap; */
+        width: 100%;
+    }
+    .carousel-item h3{
+        font-size: 1.2rem;
+    }
+    .carousel-item h1{
+        font-size: 1rem;
+    }
+    
+    
+}
+@media only screen and (max-width : 533px) {
+    .about-section .first{
+        font-size: 27px !important;
+        width: 100%;
+    }
+    .about-section p{
+        width: 245% !important;
+    }
+    .about-section h4{
+        width: 146% !important;
+    }
+    .about-section .btn{
+        width: 100% !important;
+    }
+    .footerbottom-link{
+        display: none;
+    }
+    .subscribe{
+        width: 72% !important;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width : 447px) {
+    .container {
+        width: 100%;
+    }
+    .subscribe {
+        width: 90% !important;
+    }
+    .email{
+        width: 160% !important;
+    }
+}
+@media only screen and (max-width : 321px){
+    .subscribe{
+        width: 88% !important;
+        border-radius: 50% !important;
+    }
+    .email{
+        width: 300% !important;
+    }
+}
+
+@media only screen and (max-width : 479px){}
+.first-bottle img{
+    width: 100%;
+    
+}
+.navbar-nav{
+    display: flex;
+    gap: 35px;
+}
+.search-btn .form-control:hover{
+    background-color: orange;
+    border: 3px solid white;
+    color: white;
+    box-shadow: 3px 3px 4px white;
+    border-radius: 5px;
+}
+.navbar-brand img{
+    padding-inline: 20px;
+}
+
+
+/* slider start */
+.carousel-item h3{
+    color: rgb(217, 147, 47);
+    font-size: 3rem;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -50%;
+    margin-left: -10%;
+}
+.carousel-item h1{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: -43%;
+}
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+
+/* wine items start */
+.items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.items .img1{
+    width: 60%;
+    margin-left: -1%;
+    overflow-x: hidden;
+    margin-right: -12px;
+}
+.items .img1:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+/* wine items end */
+
+ /* wine flavers start */
+
+.flavore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    align-items: center;
+    color: rgb(202, 140, 53);
+    padding: 25px;
+    cursor: pointer;
+}
+.wine-flavore{
+    background-color: #000;
+}
+.first-bottle h3{
+    font-size: 1.2rem;
+    margin-block: 10px;
+    font-weight: normal;
+    width: 99%;
+}
+.first-bottle h3:hover{
+    color: orange;
+    cursor: pointer;
+}
+ /* wine flavers end  */
+
+ /* about section start */
+
+.about-section{
+    background: url(images/bg.png);
+    width: 100%;
+    /* height: 100%; */
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex; 
+    gap: 20px;
+    padding: 45px;
+}
+.about-section .second{
+    font-weight: 100;
+    font-size: 45px;
+}
+.about-section .first{
+    font-size: 50px;
+    font-weight: 500;
+    width: 138%;
+}
+.about-section h4{
+    font-size: 31px;
+    font-weight: 400;
+    width: 118%;
+}
+.about-section .btn{
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px;
+    width: 30%;
+}
+.about-section .btn:hover{
+    color: orange;
+    border: 1px solid orange;
+    background-color: #fff;
+}
+.about-section p{
+    width: 100%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 50%;
+    margin-top: 30px;
+}
+ /* about section end */
+
+/* features product start */
+.feature-section{
+    background-color: #000;
+}
+.feature-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 30px;
+}
+.pro{
+    font-size: 2.7rem;
+    color: #fff;
+}
+.seller{
+    display: flex;
+    color: #fff;
+    gap: 45px;
+    font-size: 1.23rem;
+    font-weight: 200;
+}
+.best{
+    color: orange;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 20px;
+    color: #fff;
+}
+.first-bottle{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.nam{
+    font-size: 20px;
+    font-weight:500;
+}
+/* features product end */
+/* customer review start */
+.customer-review{
+    background-image: url(images/bg1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.about-customer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.customer-heading{
+    font-size: 1.70rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    width: 100%;
+}
+.customer-img img{
+   border: 7px solid orange; 
+   border-radius: 50%;
+}
+.director h5{
+    font-size: 1.60rem;
+    font-weight: 100;
+}
+/* customer review end */
+
+/* blogs section start */
+.latest-blog{
+    background-color: #000;
+    color: #fff;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+.blog{
+    font-size: 1.29rem;
+}
+.blog1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    gap: 25px;
+    align-items: center;text-align: left;
+} 
+.blog-one img{
+    width: 100%;
+}
+.blog-one{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+}
+.blog-one img:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition-duration: 1s;
+}
+.blog-head h4{
+    font-size: 15px !important;
+}
+.blog-btn button{
+    border: none;
+    color: orange;
+    background-color: black;
+    font-size: 1.15rem;
+}
+.blog-date h6{
+    font-size: 15px;
+    color: gray;
+}
+.blog-para{
+    color: grey;
+}
+/* blogs section end */
+
+/* newsletter section start */
+.newsletter-section{
+    background-color: rgb(34, 30, 30);
+    color: #fff;
+    border: 1px solid gray;
+    /* padding: 40px; */
+}
+.newsletter-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.subscribe{
+    background-color: rgb(118, 33, 33);
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 30px;
+    border-radius: 55%;
+}
+.subscribe:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow:30px 10px 5px lightblue inset;
+}
+.newsletter{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.news{
+    font-size: 1.45rem;
+}
+.sign-up{
+    width: 100%;
+    font-size: 1.10rem;
+}
+.email input{
+    width: 100%;
+    padding-inline: 29px;
+    padding-block: 15px;
+    background-color: #000;
+    border: none;
+}
+.email input:hover{
+    border: none;
+}
+.subscribe-btn button{
+    width: 100%;
+    padding-inline: 40px;
+    padding-block: 13px;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.subscribe-btn button:hover{
+    background-color: #fff;
+    color: orange;
+    border: 1px solid orange;
+}
+/* newsletter section end */
+/* footer section start */
+.footer{
+    text-align: center;
+    padding: 80px 0px 0px;
+    background-color: #000;
+    color: #fff;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    /* gap: 100px; */
+}
+.footer .footer-block{
+    text-align: left;
+    width: 100%;
+}
+.footer .footer-block li a{
+    color: #ccc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
+}
+.footer .footer-block li a::before{
+    content: "\f068";
+    font-family: fontawesome;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #fff;
+}
+.footer .footer-block li a:hover{
+    margin-left: 5px;
+    text-decoration: none;
+}
+.footer-title{
+    color: #d9932f;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+hr.footer-border{
+    color: #d9932f;
+    width: 20%;
+    text-align: left;
+    border-color: #d9932f;
+    border-width: 2px;
+    margin: 0 0 20px 0;
+}
+.footer-icon{
+    padding-top: 5px;
+}
+.footer-icon i{
+    color: #ccc;
+    margin-right: 10px;
+}
+.contact-footer, .contact-footer a{
+    color: #ccc;
+}
+.footer-icon .fa-envelope{
+    background: transparent;
+}
+.footer-icon div{
+    padding: 5px 0 0;
+}
+.footer-bottom-outer{
+    margin-top: 50px;
+}
+.footerbottom-link{
+    border-top: 1px solid  #d9932f;
+    border-bottom: 1px solid  #d9932f;
+    padding: 20px 0 15px 0;
+}
+.footerbottom-link .copyright{
+    text-align: center;
+    color: #ccc;
+}
+footer .card .ul.list-inline{
+    margin: 0;
+}
+.copyright p{
+    color: #ccc;
+    padding: 25px 0;
+    font-size: 1em;
+    line-height: 15px;
+    height: 50px;
+}
+.copyright i{
+    color: #d9932f;
+    margin-right: 5px;
+}
+blockquote{
+    text-align: center !important;
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+.card .list-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgb(77, 73, 73);
+}
+/* footer section end */
+
+
+ 
+
